@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+  <title>COURSES</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  background: linear-gradient(to right, #360033, #0b8793);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+    font-family: rockwell;
+  }
+a{
+  text-decoration: none;
+  color: skyblue;
+  font-weight: bold;
+}
+.course{
+    color: white;
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 90%;
+    height: 60%;
+    background: linear-gradient(to right, #485563, #29323c);
+    padding: 3%;
+    border-radius: 12px;
+    font-family: consolas;
+  }
+
+
+.course:hover{
+  box-shadow: 5px  0 8px  black;
+  transition: 0.21s;
+}
+
+.heading{
+  text-align: center;
+  font-family: rockwell;
+  font-size: 25px;
+}
+
+#getc{
+  color: white;
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 0.6%;
+  border-radius: 7px;
+  font-family: consolas;
+
+}
+#getc:hover{
+  color:white;
+  box-shadow: 2px 0 5px #eee;
+}
+
+.tumb{
+  width: 25%;
+  border-radius: 12px;
+  margin-left: 37%;
+}
+
+.tumb:hover{
+  box-shadow: 5px 3px 20px black;
+  transition: 0.1s;
+}
+
+.vid{
+  border-radius: 10px;
+}
+
+.vid:hover{
+  box-shadow: 5px 5px 12px black;
+
+}
+.youtube{
+  background: linear-gradient(to right, #000000, #e74c3c);
+  color: white;
+  font-size: 20px;
+  font-family:serif;
+  padding: 3%;
+  margin-top: 2%;
+  text-align: center;
+  border-radius: 12px;
+  }
+
+  .youtube:hover{
+    box-shadow: 5px  0 8px  black;
+    transition: 0.5s;
+  }
+
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <!-- <a class="menu" href="{% url 'contact' %}">Contact</a> -->
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'logout' %}">Logout</a>
+  <!-- <a class="menu" id="log" href="{% url 'registration' %}">Signup</a> -->
+
+
+</nav>
+
+<h2>Free Courses for AIML Students</h2>
+
+<div class="course">
+  <h2 class="heading">Neural Network from Scratch</h2>
+  <a href="https://aegeorge42.github.io/" target="_blank"><img class="tumb" src="{% static 'courses/neuralnet.png'%}" alt="png"></a>
+  <p>It is by far one of the best source where you can learn about neural networks, calculus for machine learning,
+    backpropagation and other topics in a visual manner. You can also play with neural networks by changing different parameters like epoch,
+    learning rate, layers, activation functions, etc.</p>
+
+    <p>This is a web program to understand Neural Networks.</p><br>
+    <p><strong>click the below button to goto course</strong></p>
+<a href="https://aegeorge42.github.io/" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+</div>
+
+
+  <div class="course">
+    <h2 class="heading">Scientific Computing with Python</h2>
+    <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/" target="_blank"><img class="tumb" src="{% static 'courses/scwp.png'%}"></a>
+    <p>Python is one of the most popular, flexible programming languages today.
+      You can use it for everything from basic scripting to <strong>machine learning</strong>.</p>
+      <p>In the Scientific Computing with Python Certification, you'll learn Python fundamentals like variables, loops, conditionals, and functions.
+      Then you'll quickly ramp up to complex data structures, networking, relational databases, and data visualization.</p>
+
+      <p>What are you waiting for? Star the courses and get free certification on completing given tasks successfully in the course.</p><br>
+      <p><strong>click the below button to goto course</strong></p>
+  <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/" target="_blank">
+    <button id="getc" type="submit">👉Click me👈</button>
+    </a>
+      <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></p>
+</div>
+
+<div class="course">
+  <h2 class="heading">Machine Learning with Python</h2>
+  <a href="https://www.freecodecamp.org/learn/machine-learning-with-python/" target="_blank"><img class="tumb" src="{% static 'courses/pythonml.png'%}" ></a>
+  <p><strong>Machine learning</strong> has many practical applications that you can use in your projects or on the job.</p>
+  <p>In the Machine Learning with Python Certification, you'll use the <strong>TensorFlow framework</strong> to build several neural
+     networks and explore more advanced techniques like natural language processing and reinforcement learning.</p>
+  <p>You'll also dive into neural networks, and learn the principles behind how deep, recurrent, and convolutional neural networks work.</p>
+
+
+  <p>What are you waiting for? Star the courses and get free certification on completing given tasks successfully in the course.</p><br>
+  <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.freecodecamp.org/learn/machine-learning-with-python/" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></p>
+</div>
+
+
+<div class="course">
+  <h2 class="heading">Data Analysis with Python</h2>
+  <a href="https://www.freecodecamp.org/learn/data-analysis-with-python/" target="_blank"><img class="tumb" src="{% static 'courses/data.png'%}" ></a>
+  <p><strong>Data Analysis</strong> has been around for a long time. But up until a few years ago, developers practiced it using expensive, closed-source tools like Tableau.
+    But recently, Python, SQL, and other open libraries have changed Data Analysis forever.</p>
+  <p>In the Data Analysis with Python Certification, you'll learn the fundamentals of data analysis with Python.
+    By the end of this certification, you'll know how to read data from sources like CSVs and SQL, and how to use libraries like <strong>Numpy, Pandas, Matplotlib, and Seaborn</strong> to process and visualize data.</p>
+ <p>What are you waiting for? Star the courses and get free certification on completing given tasks successfully in the course.</p><br>
+ <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.freecodecamp.org/learn/data-analysis-with-python/" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></p>
+</div>
+
+
+<div class="course">
+  <h2 class="heading">Data Structures in C and C++</h2>
+  <a href="https://www.freecodecamp.org/news/understand-data-structures-in-c-and-cpp/" target="_blank"><img class="tumb" src="{% static 'courses/datastr.png'%}" ></a>
+  <p>Here are the topics covered in this course:
+    <ul>
+      <li>Introduction to data structures</li>
+      <li>List as abstract data type</li>
+      <li>Introduction to linked list</li>
+      <li>Arrays vs linked lists</li>
+      <li>Linked list - implementation in C/C++</li>
+      <li>Linked list in C/C++ - inserting a node at beginning</li>
+      <li>Linked list in C/C++ - insert a node at nth position</li>
+      <li>Linked list in C/C++ - delete a node at nth position</li>
+      <li>Reverse a linked list - iterative method</li>
+    </ul>
+      and more.........</p><br>
+      <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></p>
+</div>
+
+
+
+<div class="course">
+  <h2 class="heading">Python for Cybersecurity Specialization</h2>
+  <a href="https://www.coursera.org/specializations/advanced-python-scripting-for-cybersecurity" target="_blank"><img class="tumb" src="{% static 'courses/cyber.png'%}" ></a>
+  <p> Python is one of the most popular and widely-used programming languages in the world due to its high usability and large collection of libraries.
+    This learning path provides an application-driven introduction to using Python for cybersecurity. Python can help to automate tasks across the cyberattack life cycle for
+    both cyber attackers and defenders. This Specialization demonstrates some of these applications and how Python can be used to make cybersecurity professionals more efficient and effective.</p><br>
+  <p>When you finish every course and complete the hands-on project, you'll earn a Certificate that you can share with prospective employers and your professional network.</p><br>
+
+  <p><strong>click the below button to goto course</strong></p>
+
+    <a href="https://www.coursera.org/specializations/advanced-python-scripting-for-cybersecurity" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.coursera.org/in" target="_blank">Coursera</a></p>
+</div>
+
+<div class="course">
+  <h2 class="heading">Machine Learning</h2>
+  <a href="https://www.coursera.org/learn/machine-learning" target="_blank"><img class="tumb" src="{% static 'courses/ml.png'%}" ></a>
+  <p><strong>Machine learning</strong> is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition,
+    effective web search, and a vastly improved understanding of the human genome. </p>
+  <p>Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it.
+    Many researchers also think it is the best way to make progress towards human-level AI.</p><br>
+  <p>When you finish every course and complete the hands-on project, you'll earn a Certificate that you can share with prospective employers and your professional network.</p><br>
+  <p><strong>click the below button to goto course</strong></p>
+    <a href="https://www.coursera.org/learn/machine-learning" target="_blank">
+  <button id="getc" type="submit">👉Click me👈</button>
+  </a>
+  <p style="text-align:center;font-size:15px;color:black;">Offered by <a href="https://www.coursera.org/in" target="_blank">Coursera</a></p>
+</div>
+
+<hr>
+
+<h2>Youtube Courses</h2>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/JMUxmLyrhSk">
+  </iframe>
+  <p>Artificial Intelligence Full Course | Artificial Intelligence Tutorial for Beginners | Edureka</p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/GwIo3gDZCVQ">
+  </iframe>
+  <p>Machine Learning Full Course - Learn Machine Learning 10 Hours | Machine Learning Tutorial | Edureka</p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/aGu0fbkHhek">
+  </iframe>
+  <p>Data Science Full Course | Learn Data Science in 3 Hours | Data Science for Beginners | Edureka</p>
+</div>
+
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/Mu1I89BeKxM">
+  </iframe>
+  <p>Python Full Course for Beginners [Tutorial] 2019 | by Clever Programmer</p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/tPYj3fFJGjk">
+  </iframe>
+  <p>TensorFlow 2.0 Complete Course - Python Neural Networks for Beginners Tutorial</p>
+</div>
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/UB3DE5Bgfx4">
+  </iframe>
+  <p>Python Pandas Tutorial | Data Analysis with Python Pandas | Python Training | Edureka</p>
+</div>
+
+
+<div class="youtube">
+  <iframe class="vid" width="50%" height="315" src="https://www.youtube.com/embed/8hly31xKli0">
+  </iframe>
+  <p>Algorithms and Data Structures Tutorial - Full Course for Beginners</p>
+
+</div>
+
+
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

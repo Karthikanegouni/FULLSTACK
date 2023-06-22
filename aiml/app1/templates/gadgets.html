@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+  <title>GADGETS</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  background-image:url("{% static 'gadgets/gad.gif'%}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+    font-family: rockwell;
+  }
+
+
+  .heading{
+    text-align: center;
+    font-family: rockwell;
+    font-size: 25px;
+  }
+
+  .gad a{
+    text-decoration: none;
+    color: skyblue;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+  .gad{
+      color: white;
+      margin-top: 4%;
+      margin-left: 2%;
+      width: 95%;
+      height: 60%;
+      background: linear-gradient( black,transparent,black,transparent,black);
+      padding: 3%;
+      border-radius: 12px;
+      font-family: consolas;
+    }
+
+* {
+box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <!-- <a class="menu" href="{% url 'contact' %}">Contact</a> -->
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'logout' %}">Logout</a>
+  <!-- <a class="menu" id="log" href="{% url 'registration' %}">Signup</a> -->
+
+
+</nav>
+    <h2>Some of the Interesting Machine Learning and AI Powered Gadgets</h2>
+
+    <div class="gad">
+      <h2 class="heading">Tiny Sorter By Google Creative Lab</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="{% static 'gadgets\Tiny_sorter.png'%}" style="width:100%">
+      </div>
+      <div class="column">
+        <video width="100%" controls>
+  <source src="{% static 'gadgets\Tiny_sorter.mp4'%}" type="video/mp4">
+</video>
+      </div>
+      <div class="column">
+        <img src="{% static 'gadgets\Tiny_sorter1.png'%}" style="width:100%">
+      </div>
+    </div>
+<p>A DIY experiment connecting Arduino and Teachable Machine</p>
+
+<p>It’s a little machine that you can easily make with a piece of paper — just cut, fold, assemble the motor and
+  put in right on top of your laptop’s webcam. Then use Teachable Machine to create a machine learning model (no coding required) to
+  sort little objects – cereal, candy, paper clips, whatever you’ve got laying around. And just like that you have your own machine learning sorter.</p>
+  <p>It’s a super simple and fun project for just about everyone - students, coders, non-coders, even if this is your first time using arduino.
+    Build your own Tiny Sorter and get a feeling for what machine learning and physical computing is all about.</p>
+    <ul>
+      BUILT WITH:
+      <li>tensorflow.js</li>
+      <li>Teachable Machine</li>
+      <li>Arduino</li>
+      <li>Javascript</li>
+    </ul>
+    <p>For more info <a href="https://experiments.withgoogle.com/tiny-sorter" target="_blank">Click Here</a></p>
+
+</div>
+
+
+<div class="gad">
+  <h2 class="heading">Moorebot Scout AI-powered smart home robot</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gadgets\scout.png'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <iframe width="100%" height="180" src="https://www.youtube.com/embed/TiybMBve-DM"></iframe>
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\scout1.png'%}" style="width:100%">
+  </div>
+</div>
+
+<p>The Moorebot Scout AI-powered smart home robot is ideal for intelligent home monitoring.
+  It has no blind spots thanks to its many advanced sensors and AI algorithms.
+  And, with its autonomous patrol mode, this AI-powered robot is ideal for home surveillance and pet companionship.</p>
+  With its FHD camera with night vision and four Mecanum omnidirectional wheels, it’s a camera that moves around the house and communicates what it sees.
+  And you’ll love that you can control it via Alexa and Google. Moreover, you can custom program this AI-powered smart home robot to do more for you.
+  For example, it supports Scatch to teach kids about coding and is open-sourced for developers.
+  Finally, this robot’s fully-waterproof design ensures that it’s suitable for outdoor discovery and inspection.</p>
+
+</div>
+
+
+<div class="gad">
+  <h2 class="heading">Square Off Grand Kingdom AI Chessboard</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gadgets\squareoff.png'%}" style="width:100%">
+  </div>
+  <div class="column">
+    <video width="100%" controls>
+  <source src="{% static 'gadgets\squareoff.mp4'%}" type="video/mp4">
+  </video>
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\squareoff.gif'%}" style="width:100%">
+  </div>
+</div>
+
+<p>Enjoy a game of chess with anyone in the world with the Square Off Grand Kingdom Set Smart AI Chessboard.
+  While at first glance it looks like a handcrafted wooden chessboard, there’s more to this smart AI chessboard than meets the eye.
+  Enabled by robotics, sensors, and artificial intelligence, the chess pieces actually move on their own.</p>
+  <p>With the Grand Kingdom Set, you can challenge opponents from all over the world. In addition, you can play board versus board or even against the board app.
+  If you’re looking to up your skills even more, there are 20 different difficulty levels thanks to the built-in AI.
+   Square Off analyzes your game, streams live chess events, and helps you improve.
+   The Grand Kingdom Set has parking spots for each piece and even resets itself when you’re done playing.</p>
+
+</div>
+
+
+<div class="gad">
+  <h2 class="heading">Leka interactive robotic smart toy</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="{% static 'gadgets\leka.png'%}" style="width:100%">
+  </div>
+  <div class="column">
+  <iframe width="100%" height="190" src="https://www.youtube.com/embed/tqjrPxYrhDU"></iframe>
+  </div>
+  <div class="column">
+    <img src="{% static 'gadgets\leka.gif'%}" style="width:100%">
+  </div>
+</div>
+<p>Leka is a robotic interactive smart toy from a French startup that’s designed to help children developmental disabilities like Autism learn and communicate better with others.
+  This robotic companion was built specifically to increase motivation and help children with special needs learn and play.
+  Primarily aimed at schools and therapeutic institutes the robot-like toy can be controlled by a teacher or caregiver or can also function in auto mode.
+  Leka acts as a robot friend that lights up with colorful LEDs, plays music and chirps and emits subtle vibrations.
+  Its screen can show facial expressions and display photos and videos. Leka can be customized to define the level of stimulation and interaction for each child based on his or her needs,
+  and it can also play educational games with children and adults.</p>
+<p>Through repetitive action, this friendly robot can become a safe and comforting way for children and adults with disabilities to learn more and communicate better.</p>
+
+
+</div>
+
+<div class="gad">
+<p> For more such information and Updates on <strong>Artificial Intelligence</strong>, Join Reddit Community <a href="https://www.reddit.com/r/ArtificialInteligence/" target="_blank">r/ArtificialInteligence</a></p>
+<p>Join <a href="https://www.reddit.com/r/MachineLearning/" target="_blank">r/MachineLearning</a> for updates on <strong>Machine Learning</strong></p>
+
+</div>
+
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+  <title>HOME</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+
+  background: linear-gradient(to right, #360033, #0b8793);
+  background-size: cover;
+  height:100%;
+  }
+
+  section{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+  }
+  #bigd{
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
+    float: left;
+  }
+  #bigd:hover{
+    box-shadow: 0 3px 5px grey;
+  }
+#appli{
+  text-align: left;
+  font-size: 12px;
+}
+
+
+</style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <!-- <a class="menu" href="{% url 'contact' %}">Contact</a> -->
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'logout' %}">Logout</a>
+  <!-- <a class="menu" id="log" href="{% url 'registration' %}">Signup</a> -->
+
+
+</nav>
+<section>
+    <h2>Career Opportunities in Artificial Intelligence</h2><br><hr>
+<div>
+    <img id="bigd" src="{% static 'images/bigd.gif'%}" alt="big data">
+    <h3>1. Big Data Engineer</h3>
+<p>The role of a Big Data Engineer is to create an ecosystem for the business systems to interact efficiently.
+Their primary task is to build and effectively administer big data of an organization.
+They also have to carry out the function of obtaining outcomes from big data in a robust manner.
+Being a big data engineer will fetch you a good salary when compared to other AI roles.</p>
+<p>Programming languages like Python, R and Java are essential in building your career in AI as a big data engineer.
+       Skills related to SQL and Apache Spark enhances your chances of grabbing the relevant career opportunity.
+      Aspirants should have some proper insights on data migration along with data visualization and mining.</p><hr>
+</div>
+
+
+<div>
+  <img id="bigd" src="{% static 'images/busi.jpg'%}" alt="big data">
+  <h3>2. Business Intelligence Developer</h3>
+  <p>The primary responsibility of a Business Intelligence Developer is to consider the business acumen along with AI.
+    They recognize different business trends by assessing complicated data sets. They help in swelling the profits of a
+    company by preparing, developing and nourishing business intelligence solutions.</p>
+  <p>One who is aware of computer programming and data sets can acquire this position.
+     A formal bachelor’s degree in the field of computers, mathematics or engineering is suitable to land you in a job.
+     The problem-solving strengths and analytical capabilities of the applicants should be high.
+     Sound knowledge of SQL servers and queries along with data warehouse designing is needed while pursuing this career option.</p><hr>
+   </div>
+
+   <div>
+   <img id="bigd" src="{% static 'images/data_science.jpg'%}" alt="DS img">
+   <h3>3. Data Scientist</h3>
+   <p> Data scientists assist in gathering relevant data from multiple sources for the purpose of assessing it to gain constructive inferences.
+     The inferences gained are influential in tackling various issues concerned with the business.
+      Depending upon different data patterns, past and present information, data scientists make various predictions.</p>
+      <p>The performance of the business is positively impacted due to a data scientist.The candidate must be comfortable using programming languages like Python, Scala or SQL.
+      In terms of education, the applicant should hold a master’s degree in Mathematics or Computer Science.
+    Job-seekers are required to be equipped with modern tools like Spark, Hadoop, Pig or Hive while pursuing this career option. </p><hr>
+      </div>
+  <div>
+    <img id="bigd" src="{% static 'images/machinelearn.jpg'%}" alt="ML img">
+    <h3>4. Machine Learning Engineer</h3>
+    <p>Machine learning engineers are involved in building and maintaining self-running software that facilitates machine learning initiatives.
+      They are in continuous demand by the companies and their position rarely remains vacant.
+      They work with huge chunks of data and possess extraordinary data management traits.</p>
+      <p>A master’s degree in Mathematics or Computer Science is preferred. Python, R, Scala, and Java are the required technology stacks.
+        Having in-depth knowledge about machine learning algorithms, neural networks and deep learning is highly beneficial.
+      Sound familiarity with software development tools, cloud applications, and excelling coding skills gives you an added advantage.</p><hr>
+</div>
+
+<div>
+  <img id="bigd" src="{% static 'images/research.jpg'%}" alt="img">
+  <h3>5. Research Scientist</h3>
+  <p>Research scientists undertake efforts in performing extensive research dealing with applications of machine learning and machine intelligence.
+    A research scientist is one who has gained expertise in the field of applied mathematics, statistics, deep learning, and machine learning.</p>
+    <p>The salary of a research scientist is quite high and organizations recruit those who have a good experience in their AI career.
+    Aspirants who possess insights regarding parallel computing, computer perception, benchmarking, graphical models, and distributed computing are favoured.
+    It is quite evident that the importance of research scientists will not diminish in the next generation.</p><hr>
+  </div>
+
+  <div>
+    <img id="bigd" src="{% static 'images/data.jpg'%}" alt="data analyst img">
+    <h3>6. AI Data Analyst</h3>
+    <p>The major function of an AI data analyst is to perform data mining, data cleaning, and data interpretation. By cleaning data, requisite data is collected to carry out data interpretation.
+      Any sort of useless data is discarded by them so that it does not hamper the data interpretation process. </p>
+      <p>With the help of statistical tools and methods, inferences are drawn from the data by an AI data analyst.
+        To become an AI data analyst, you are required to possess a bachelor’s degree in mathematics or computer science.
+      A comprehensive understanding of regression and the ability to utilize MS Excel is essential to acquire this position.
+      In comparison to other AI roles, the salary is quite low for an AI data analyst.</p><hr>
+</div>
+
+<div>
+  <img id="bigd" src="{% static 'images/prod.jpg'%}" alt="data analyst img">
+  <h3>7. Product Manager</h3>
+  <p>The duty of a product manager is to resolve challenging problems by strategically collecting data.
+    Project manager may perform all activities related to schedule and resource management.</p>
+    <p>You should possess the skill of identifying relevant problems that obstructs the business proceedings.
+     The next step is to get hold of related data sets to facilitate data interpretation.
+     After data interpretation, the product manager is required to estimate business impacts from the outcomes of data interpretation.
+     Each organization needs a product manager, whose demands have skyrocketed these days.
+   Product managers often start their careers as engineers or specialists in other functions and eventually transition to product management. </p><hr>
+  </div>
+
+<div>
+  <img id="bigd" src="{% static 'images/ai_eng.jpg'%}" alt="data analyst img">
+  <h3>8. AI Engineer</h3>
+  <p>AI engineers are problem-solvers who develop, test and apply different models of Artificial Intelligence. They effectively handle AI infrastructure.
+    They make use of machine learning algorithms and understanding of the neural network to develop useful AI models.
+  Undergraduate or postgraduate degrees in the field of data science, computer science or statistics are mandatory.
+  Any kind of certifications on ML or data science adds to the advantage.</p>
+  <p>Proficiency in programming languages, such as Python, R or C++, is essential.
+    The applicants should have a strong grasp in statistics, NLP, applied mathematics, and analytics.
+  The pay scale of an AI engineer is quite good due to the role’s surging demands.</p><hr>
+
+    </div>
+
+    <div>
+      <img id="bigd" src="{% static 'images/robo.gif'%}" alt="data analyst img">
+      <h3>9. Robotics Scientist</h3>
+      <p>A reduction in jobs will indeed take place due to the emergence of robotics in the field of AI.
+        Conversely, jobs will also rise as robotics scientists are in incessant demands by major industries for programming their machines.
+        The robots will help in carrying out certain tasks efficiently.</p>
+      <p>The candidate should have a master’s degree in robotics, computer science or engineering.</p>
+        <p>The median salary for a robotics scientist is quite high.
+        Although automation is favoured by robots, there should be some professionals to build them. Thus, the risk of losing jobs is minimized.</p><hr>
+      </div>
+
+      <div id="appli">
+        <h3 style="text-align:center; font-size:20px;">Vast Applications of AI<h3>
+          <ul>
+      <li>Healthcare: Proper diagnosis and treatment are facilitated by introducing AI in healthcare.</li>
+      <li>Education: A suitable learning environment is furnished to the students by utilizing AI.</li>
+      <li>Sports: With advanced AI technologies, athletes can expand their capabilities.</li>
+      <li>Agriculture: Maximum yield is possible by AI as it helps in developing the perfect farming environment.</li>
+      <li>Construction: Buildings can be constructed more safely and efficiently by the incorporation of AI.</li>
+      <li>Banking: Chat-bot assistance, fraud detection, and enhanced payment methods are some of the positive outcomes of AI.</li>
+      <li>Marketing: The sales target can be effectively achieved by making use of predictive intelligence along with machine learning.</li>
+      <li>E-commerce: Effective warehouse operations, good product recommendations, and fraud prevention are some of the fruits of AI.</li>
+      </ul>
+    </div>
+    <hr>
+    <p>visit <a href="https://www.aceec.ac.in/" target="_blank" style="color:grey;font-weight:bold">ACE ACADEMY</a> for more.</p>
+</section>
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

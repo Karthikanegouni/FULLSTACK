@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+  <title>LOGIN</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  /*background: radial-gradient(#485563,#29323c);
+  */
+  background-image: url("{% static 'images/imgg.gif'%}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+   #check{
+     margin-top: 20px;
+     margin-left: 30px;
+   }
+
+   #n_acc{
+     margin-top: 3%;
+     text-align: center;
+   }
+
+
+   #head{
+     font-size: 45px;
+     font-family: rockwell;
+     text-align: center;
+   }
+
+   .A{
+     margin-left: 8%;
+     font-size: 20px;
+     font-family: sans-serif;
+     color: black;
+   }
+
+   #frame{
+         margin-left: 35%;
+         margin-top: 5%;
+         width:28%;
+         height:430px;
+         color:white;
+         padding: 20px;
+         background: radial-gradient(#faebd7,#555);
+         border-radius: 8px;
+         box-shadow: 10px 0 10px rgba(0,0,0,0.4);
+   }
+
+   #frame:hover{
+     box-shadow: 30px 0 20px rgba(0,0,0,0.4);
+   }
+   #a{
+     margin-top: 5%;
+
+   }
+
+   #b{
+     margin-top: 5%;
+   }
+
+   header{
+     width:100%;
+     text-align: center;
+     margin-top: 1%;
+     font-size: 20px;
+     font-family: consolas;
+     background-color: white;
+   }
+   footer{
+     color: white;
+     font-size: 10px;
+     text-align: center;
+   }
+
+   span{
+     color: Black;
+   }
+
+   .boxes{
+     width: 70%;
+     height: 25px;
+     margin-top: 5%;
+     margin-left: 8%;
+     padding-left: 35px;
+     border: 2px solid #3a7bd5;
+
+     background-image:url("{% static 'images/user.gif'%}");
+     background-size: 30px;
+     background-repeat: no-repeat;
+     background-position: left;
+
+   }
+
+   #pass{
+     background-image:url("{% static 'images/lock.gif'%}");
+     background-size: 30px;
+     background-repeat: no-repeat;
+     background-position: left;
+   }
+
+
+   .boxes:hover{
+     box-shadow: 10px 0 20px #555;
+   }
+
+   #btn{
+       margin-top: 8%;
+       margin-left: 38%;
+       font-size: 20px;
+       padding: 5px;
+       color: white;
+       border-radius: 5px;
+       background-color: #3f4c6b;
+       border: 2px solid #283048;
+
+
+   }
+
+
+   #btn:hover{
+
+     opacity: 0.8;
+   }
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <!-- <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <a class="menu" href="{% url 'contact' %}">Contact</a>
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'login' %}">Login</a>
+  <a class="menu" id="log" href="{% url 'registration' %}">Signup</a>
+
+
+</nav> -->
+<!-- <center>
+{% if messages %}
+{% for message in messages %}
+<h3 style="color:red";>{{message}}<h3>
+{% endfor%}
+{% endif %}
+</center> -->
+  <div id="frame">
+  <form method='POST'>
+    {% csrf_token %}
+       <p id="head">LO<span>G</span>IN</p>
+       <div id="a">
+       <label class="A">E-Mail:</label>
+       <input class="boxes" type="email" name='email' placeholder="Enter your Email" required/>
+       </div>
+       <div id="b">
+       <label class="A">Password:</label>
+       <input class="boxes" id="pass" type="password" name="passwrd" placeholder="Enter your Password" required/>
+       </div>
+       <input id="check" type="checkbox">Remember my account</input><br>
+       <button id="btn" type="submit" value='login fun' formaction=login_fun>LOGIN</button>
+       <p id="n_acc">New to here? <a href="{% url 'registration' %}">Create an account</a><p>
+
+        </form>
+</div>
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

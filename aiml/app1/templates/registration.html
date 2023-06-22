@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <title>Registration</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  background: radial-gradient(#485563,#29323c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  header{
+    width:100%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 20px;
+    font-family: consolas;
+    background-color: white;
+  }
+  #n_acc{
+    margin-top: 1%;
+    text-align: center;
+  }
+
+  a{
+    color : grey;
+  }
+
+  #reg{
+    color: white;
+    margin-top: 25px;
+    color:white;
+    padding: 20px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    text-align: center;
+    height: 100%;
+    font-family: sans-serif;
+    border-radius: 12px;
+  }
+
+  .tname{
+    font-size: 20px;
+    margin-right: 150px;
+    line-height: 50px;
+  }
+
+  .tname1{
+    font-size: 20px;
+    margin-right: 80px;
+    line-height: 50px;
+  }
+
+.nbox{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#cbtn{
+  font-size: 25px;
+  border-radius: 7px;
+  color: white;
+  padding: 7px 17px;
+  background: linear-gradient(to right, #314755, #26a0da);
+}
+
+#cbtn:hover{
+    opacity: 0.5;
+      color: black;
+}
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <!-- <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <a class="menu" href="{% url 'contact' %}">Contact</a>
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'login' %}">Login</a>
+  <a class="menu" id="log" href="{% url 'registration' %}">Signup</a>
+
+
+</nav> -->
+  <div id="reg">
+    <h1>Create a New Account</h1><hr>
+    <form method='POST'>
+      {% csrf_token %}
+      <label class="tname">First Name:</label><br>
+        <input class="nbox" type="text" name='fname' placeholder="First Name" required/><br>
+      <label class="tname">Last Name:</label><br>
+        <input class="nbox" type="text" name='lname' placeholder="Last Name" required/><br>
+      <label style="margin-right:190px;line-height:50px;" class="nbox" >Email:</label><br>
+        <input class="nbox" type="Email" name='email' placeholder="abc@gmail.com"required/><br>
+      <label class="tname1">Create a Username:</label><br>
+        <input class="nbox" type="text" name='username' placeholder="User Name" required/><br>
+      <label class="tname1">Create a Password:</label><br>
+        <input class="nbox" type="password" name='passwrd' placeholder="password" required/><br><br>
+
+      <input type="checkbox" name='check' required>Agree to all terms and conditions</input><br><br>
+
+        <button id="cbtn" type="submit" value="Insert Record" formaction=Insert_rec>Create</button>
+         <p id="n_acc">Already have an Account? <a href="{% url 'login' %}">LOGIN</a><p>
+        {% if messages %}
+        {% for message in messages %}
+        <h2 style="color:green";>{{message}}<h2>
+        {% endfor%}
+        {% endif %}
+
+      </form>
+
+</div>
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <title>ABOUT</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  background-image:url("{% static 'gadgets/gad.gif'%}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  #abt{
+    color:black;
+    width: 50%;
+    margin-left: 20%;
+    font-family: cursive;
+    font-size:15px;
+    padding: 5%;
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    border-radius: 12px;
+  }
+
+  #ai{
+    border-radius: 50%;
+    float:left;
+    width: 10%;
+    height: 10%;
+    padding: 4% 2%;
+  }
+</style>
+  </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <!-- <a class="menu" href="{% url 'contact' %}">Contact</a> -->
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'logout' %}">Logout</a>
+  <!-- <a class="menu" id="log" href="{% url 'registration' %}">Signup</a> -->
+
+
+</nav>
+
+<div id="abt">
+  <h2 style="font-family:consolas; color:grey; text-align:center;font-size:30px;">ABOUT US</h2>
+  <div>
+    <a href="{% url 'home'%}"><img id="ai" src="{% static 'images/favicon1.png'%}" alt="Icon"></a>
+    <div>
+
+  <p>Artificial intelligence (AI) is truly a revolutionary feat of computer science, set to become a core component of all modern software over the coming years and decades.
+This presents a threat but also an opportunity. AI will be deployed to augment both defensive and offensive cyber operations.
+So Every student Must understand the concepts of AIML and Implement them in their real lifes.</p>
+  <br>
+  <p>In This website: </p>
+  <p> Information on Artificial Intelligence and machine learning are available here.</p>
+  <p>Carrer opportunities of Artificial Intelligence and Machine Learning</p>
+  <p>Free certification Courses are available here. </p>
+  <br>
+  <p style="font-size:30px;font-family:Courier New;">Science is going to be revolutionized by AI assistants.<br>
+    AI is neither good nor evil. It's a tool. It's a technology for us to use.
+  </p>
+
+  <p id="det">
+    Mail-ID : karthikanegouni@gmail.com<br>
+    contact : 9652187648
+   </p>
+
+  </div>
+
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

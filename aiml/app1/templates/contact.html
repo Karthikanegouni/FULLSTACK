@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <title>Contact</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  background-image: url("{% static 'images/contact.png'%}");
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+
+  #contact{
+    color: white;
+    margin-top: 25px;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    font-family: sans-serif;
+  }
+.nbox{
+    margin-top: 2%;
+    width: 50%;
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#cbtn{
+  font-size: 25px;
+  border-radius: 7px;
+  color: white;
+  padding: 7px 40px;
+  background-color:#222d39;
+}
+#cbtn:hover{
+    opacity: 0.5;
+}
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+  <nav class="navbar">
+  <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+  <a class="menu" href="{% url 'home' %}">Home</a>
+  <a class="menu" href="{% url 'career' %}">Career</a>
+  <a class="menu" href="{% url 'courses' %}">Courses</a>
+  <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+  <!-- <a class="menu" href="{% url 'contact' %}">Contact</a> -->
+  <a class="menu" href="{% url 'about' %}">About</a>
+  <a class="menu" id="log" href="{% url 'logout' %}">Logout</a>
+  <!-- <a class="menu" id="log" href="{% url 'registration' %}">Signup</a> -->
+
+
+</nav>
+
+
+
+<div id="contact">
+  <h2>Get in Touch</h2><hr>
+  <p>If you have any questions or need help, please fill out the form below.
+    We do our best to respond within 1 business day.</p>
+  <form method='POST'>
+    {% csrf_token %}
+      <input class="nbox" type="text" name='fname' placeholder="Name" required/><br>
+      <input class="nbox" type="email" name='email' placeholder="Email" required/><br>
+      <input class="nbox" type="tel" name='phno' placeholder="Mobile Number" pattern="[0-9]{10}"required/><br>
+      <input class="nbox" type="text" name='sub' placeholder="Subject" required/><br>
+      <textarea class="nbox" name='msg' placeholder="Message" rows="4" cols="20" required/></textarea><br><br>
+
+    <!-- <input type="checkbox" required>Subscribe to AIML Newsletter</input><br><br> -->
+
+      <button id="cbtn" type="submit" value='feedback' formaction=feedback>Submit</button>
+    </form>
+    {% if messages %}
+    {% for message in messages %}
+    <h2 style="color:green";>{{message}}<h2>
+    {% endfor%}
+    {% endif %}
+</div>
+
+<footer>
+<p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>

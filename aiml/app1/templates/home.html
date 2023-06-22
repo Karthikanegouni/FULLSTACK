@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <title>HOME</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css'%}">
+  <link rel="icon" href="{% static 'images/favicon1.png'%}">
+  <style>
+  body,html{
+  /*background: radial-gradient(#485563,#29323c);
+  */
+  background: linear-gradient(to right, #360033, #0b8793);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  #aip{
+    color: white;
+    margin-top: 40px;
+    background: linear-gradient(to right,transparent, #8e0e00, #1f1c18);
+    padding: 30px 20px;
+    border-radius: 40px;
+    font-family: cursive;
+
+  }
+
+
+  #mlp{
+    margin-top: 30px;
+    color: white;
+      background: linear-gradient(to right, transparent,#16222a, #3a6073);
+    padding: 30px 20px;
+    border-radius: 40px;
+    font-family: cursive;
+  }
+
+
+iframe{
+  width: 70%;
+  height: 420px;
+  border-radius: 30px;
+  margin-left: 15%;
+  margin-top: 10px;
+
+
+}
+
+iframe:hover{
+  box-shadow: 0 5px 20px green, 0 5px 20px blue ;
+}
+
+
+  </style>
+
+ </head>
+<body>
+  <header>
+    <h1>Artificial Intelligence and Machine Learning</h1>
+  </header>
+      <nav class="navbar">
+      <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/logo.png'%}"></a>
+      <a class="menu" href="{% url 'home' %}">Home</a>
+      <a class="menu" href="{% url 'career' %}">Career</a>
+      <a class="menu" href="{% url 'courses' %}">Courses</a>
+      <a class="menu" href="{% url 'gadgets' %}">Gadgets</a>
+      <!-- <a class="menu" href="{% url 'contact' %}">Contact</a> -->
+      <a class="menu" href="{% url 'about' %}">About</a>
+      <a class="menu" id="log" href="{% url 'logout' %}">Logout</a>
+      <!-- <a class="menu" id="log" href="{% url 'registration' %}">Signup</a> -->
+
+
+  </nav>
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/mJeNghZXtMo">
+</iframe>
+    <div id="aip" class="text">
+          <h2 style="text-align:center;">Artificial Intelligence</h2>
+          <p><strong>Artificial intelligence</strong> is a field of computer science which makes a computer system that can mimic human intelligence.
+            It is comprised of two words "Artificial" and "intelligence", which means "a human-made thinking power."
+            Hence we can define it as,</p>
+
+            <p>Artificial intelligence is a technology, using which we can create intelligent systems that can simulate human intelligence.</span></p>
+              <p>The Artificial intelligence system does not require to be pre-programmed, instead of that, they use such algorithms which can work with their own intelligence.
+                It involves machine learning algorithms such as Reinforcement learning algorithm and deep learning neural networks.
+                AI is being used in multiple places such as Siri, Google?s AlphaGo, AI in Chess playing, etc.<p>
+
+<p>Based on capabilities, AI can be classified into three types:
+        <ul>
+        <li>Weak AI</li>
+        <li>General AI</li>
+        <li>Strong AI</li>
+      </ul>
+</p>
+<p>Currently, we are working with weak AI and general AI. The future of AI is Strong AI for which it is said that it will be intelligent than humans.</p>
+</div>
+<br>
+<hr>
+
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/f_uwKZIAeM0">
+</iframe>
+
+<div id="mlp">
+  <h2 style="text-align:center;">Machine Learning</h2>
+  <p><strong>Machine learning</strong> is a subfield of artificial intelligence, which enables machines to learn from past data or experiences without being explicitly programmed.</p>
+  <p>Machine learning enables a computer system to make predictions or take some decisions using historical data without being explicitly programmed.
+    Machine learning uses a massive amount of structured and semi-structured data so that a machine learning model can generate accurate result or give predictions based on that data.</p>
+
+<p>It can be divided into three types:
+<ul>
+<li>Supervised learning</li>
+<li>Reinforcement learning</li>
+<li>Unsupervised learning</li>
+</ul>
+</p>
+
+</div>
+
+
+
+
+<footer>
+  <p>&copy AIML<br>All Rights Reserved.</p>
+</footer>
+
+</body>
+
+
+</html>
